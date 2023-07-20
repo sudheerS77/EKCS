@@ -1,0 +1,12 @@
+h1, h4, p {
+}
+.same_color {
+    color: red;
+}
+h1{
+    background-color: blue;
+}
+h4{
+    background-color: gray;
+}
+:root

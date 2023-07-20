@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    
+    <ul type="none">
+      <li>Volo</li>
+      <li>BMW</li>
+      <li>TATA</li>
+    </ul>
+
+    <ol type="i">
+      <li>volo</li>
+      <li>BMW</li>
+      <li>TAT</li>
+    </ol>
+
+   <dl>
+      <dt>Volo</dt>
+      <dd>
+        This is volo car This is volo car <br />
+        This is volo carThis is volo carThis is volo car
+      </dd>
+      <dt>BMW</dt>
+      <dd>This is BMW car</dd>
+    </dl> 
+
+  </body>
+</html>
+
+
+Certainly! Here are comprehensive notes on HTML lists, including attributes and examples:
+
+HTML Lists:
+- HTML provides three types of lists: ordered lists, unordered lists, and definition lists.
+- Lists are used to group related items together and provide a structured way of presenting information.
+
+1. Ordered List (<ol>):
+   - Ordered lists are used to present items in a specific order.
+   - Each list item is marked with a number (by default).
+
+   Example:
+   
+   <ol>
+     <li>First item</li>
+     <li>Second item</li>
+     <li>Third item</li>
+   </ol>
+   
+
+   Common attributes:
+   - type: Specifies the type of numbering or bullet style.
+     - Values: "1" (default - decimal numbers), "A" (uppercase letters), "a" (lowercase letters), "I" (uppercase Roman numerals), "i" (lowercase Roman numerals).
+   - start: Specifies the starting number of the list.
+
+   Example:
+   
+   <ol type="A" start="3">
+     <li>Third item</li>
+     <li>Fourth item</li>
+     <li>Fifth item</li>
+   </ol>
+   
+
+2. Unordered List (<ul>):
+   - Unordered lists are used to present items in no particular order.
+   - Each list item is marked with a bullet (by default).
+
+   Example:
+   
+   <ul>
+     <li>Apple</li>
+     <li>Orange</li>
+     <li>Banana</li>
+   </ul>
+   
+
+   Common attributes:
+   - type: Specifies the type of bullet style.
+     - Values: "disc" (default - filled circle), "circle" (hollow circle), "square" (filled square), "none" (no bullet).
+
+   Example:
+   
+c
+   
+
+3. Definition List (<dl>):
+   - Definition lists are used to present terms and their definitions.
+   - Each term is marked with a <dt> (definition term) tag, and each definition is marked with a <dd> (definition description) tag.
+
+   Example:
+   
+   <dl>
+     <dt>HTML</dt>
+     <dd>HyperText Markup Language</dd>
+     <dt>CSS</dt>
+     <dd>Cascading Style Sheets</dd>
+   </dl>
+   
+
+   Common attributes:
+   - None
+
+   Note: You can also nest lists within other lists to create hierarchical structures.
+
+Common List Attributes:
+- class: Specifies one or more class names for the list (for styling or JavaScript).
+- id: Specifies a unique identifier for the list (for JavaScript or CSS targeting).
+- style: Specifies inline CSS styles for the list.
+- title: Specifies additional information about the list (displayed as a tooltip).
+
+Example:
+
+<ol class="my-list" id="list1" style="color: blue;" title="My List">
+  <li>First item</li>
+  <li>Second item</li>
+  <li>Third item</li>
+</ol>
+
+
+These are the main attributes and examples for HTML lists. Lists provide a flexible way to organize and structure content in web pages.

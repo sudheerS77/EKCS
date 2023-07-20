@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- <div>
+      <a href="https://dpsrkp.net" class="ifr_link">
+        <iframe
+          src="https://dpsrkp.net/"
+          title="delhi public school"
+          width="800"
+          height="500"
+          class="ifr"
+        ></iframe>
+      </a>
+    </div> -->
+
+    <iframe
+      width="360"
+      height="215"
+      src="https://www.youtube.com/embed/FoepniNiaW8"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+
+  </body>
+</html>
+
+
+In HTML, iframes provide a way to embed another HTML document within the current document. They are useful for displaying content from other websites, including videos, maps, social media feeds, and more. Here are some notes on iframes, including attributes and examples:
+
+1. Syntax:
+   
+   <iframe src="URL" [attributes]>
+     Your browser does not support iframes.
+   </iframe>
+   
+
+2. Attributes:
+      src: Specifies the URL of the document to be embedded within the iframe.
+      width and 'height': Sets the dimensions of the iframe in pixels or as a percentage of the available space.
+      frameborder: Specifies whether or not to display a border around the iframe. Set to '0' to remove the border.
+      allowfullscreen: Enables fullscreen mode for the iframe content when used with '<iframe>' elements that contain embedded videos.
+      sandbox: Sets restrictions on the iframe's contents for enhanced security. For example, 'sandbox="allow-scripts"' allows only scripts to run.
+      scrolling: Specifies whether or not to display scrollbars for the iframe content. Possible values are 'auto', 'yes', 'no'.
+      name: Provides a name for the iframe, which can be targeted by other elements or scripts for manipulation.
+      id, 'class', and other common attributes: You can use these attributes to style or manipulate the iframe using CSS or JavaScript.
+
+3. Example:
+   
+   <iframe src="https://www.example.com" width="500" height="300" frameborder="0"></iframe>
+   
+   In this example, the iframe embeds the web page at 'https://www.example.com' with a width of 500 pixels and a height of 300 pixels. The 'frameborder' attribute is set to '0' to remove the border.
+
+It's worth noting that iframes can introduce security risks, such as cross-site scripting (XSS) attacks if not used carefully. When embedding content from external sources, ensure that you trust the source and validate the content to mitigate potential risks.
+
+Additionally, the use of iframes should be done thoughtfully, considering factors such as responsiveness, accessibility, and performance. Always test your iframes across different devices and browsers to ensure a consistent and user-friendly experience.

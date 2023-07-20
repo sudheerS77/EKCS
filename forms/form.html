@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./html.png" />
+    <link rel="stylesheet" href="./form.css" />
+    <title>form</title>
+  </head>
+  <body>
+    <form action="singin()">
+      <input type="text" placeholder="firstName" /> <br />
+      <br />
+      <input type="text" maxlength="10" /> <br />
+      <br />
+      <input type="email" placeholder="john@gmail.com" required /> <br />
+      <br />
+      <input type="password" /> <br />
+      <br />
+      <input type="checkbox" />
+      <label for="">checkBox 1 </label>
+
+      <label for="">
+        <input type="checkbox" />
+        checkBox - 2
+      </label>
+      <br /><br />
+      Gender
+      <label for="">
+        <input type="radio" name="gender" value="male" />
+        Male
+      </label>
+      <label for="">
+        <input type="radio" name="gender" value="female" />
+        Female
+      </label>
+      <br />
+      <br />
+      <input type="file" name="profile" accept=".jpg, .png" required />
+      <br />
+      <br />
+      <input type="date" value="2023-08-20" /> <br /><br />
+      <input type="time" />
+      <br /><br />
+      <input type="color" /> <br />
+      <br />
+      <input type="range" min="0" max="10" step="3" value="6" /> <br />
+      <br />
+      <input type="text" placeholder="text" /> <br />
+      <br />
+      <input type="url" placeholder="url" /> <br />
+      <br />
+      <br />
+      <input type="search" /> <br />
+      <br />
+      <input type="date" />
+      <input type="time" />
+      <input type="datetime-local" /> <br />
+      <br />
+      <input type="week" min="2023-W20" max="2023-W30" /> <br /><br />
+      <input type="reset" />
+      <input type="submit" /> <br />
+
+      <label for="colors">Choose Your Favoute color</label>
+      <select name="" class="" id="colors">
+        <option hidden>Chose your color</option>
+        <option value="red">Red Color</option>
+        <option value="green">Green Color</option>
+        <option value="blue">Blue Color</option>
+      </select>
+
+      <select name="" id="groups" class="dropdown">
+        <optgroup label="Group-1">
+          <option value="g-1">g-1</option>
+          <option value="g-2">g-2</option>
+          <option value="g-3">g-3</option>
+        </optgroup>
+
+        <optgroup label="Group-2">
+          <option value="">g-3</option>
+          <option value="">g-4</option>
+          <option value="">g-5</option>
+        </optgroup>
+      </select>
+
+      <label for="address">Enter your address</label> <br />
+      <textarea id="address" cols="30" rows="10"></textarea>
+    </form>
+  </body>
+</html>
+
+
+
+1. Text Input Field:
+html
+<input type="text" name="username" placeholder="Enter your username" required maxlength="50" autocomplete="off">
+
+Attributes:
+  type: Specifies the input field as a text input.
+  name: Provides a name for the input field.
+  placeholder: Displays a placeholder text within the input field.
+  required: Makes the field mandatory for form submission.
+  maxlength: Sets the maximum number of characters allowed.
+  autocomplete: Controls the browser's autocomplete feature.
+
+2. Password Input Field:
+html
+<input type="password" name="password" placeholder="Enter your password" required>
+
+Attributes:
+  type: Specifies the input field as a password input.
+  name: Provides a name for the input field.
+  placeholder: Displays a placeholder text within the input field.
+  required: Makes the field mandatory for form submission.
+
+3. Email Input Field:
+html
+<input type="email" name="email" placeholder="Enter your email address" required>
+
+Attributes:
+  type: Specifies the input field as an email input.
+  name: Provides a name for the input field.
+  placeholder: Displays a placeholder text within the input field.
+  required: Makes the field mandatory for form submission.
+
+4. Number Input Field:
+html
+<input type="number" name="age" min="18" max="100" step="1" required>
+
+Attributes:
+  type: Specifies the input field as a number input.
+  name: Provides a name for the input field.
+  min: Sets the minimum allowed value.
+  max: Sets the maximum allowed value.
+  step: Specifies the increment or decrement value.
+  required: Makes the field mandatory for form submission.
+
+5. Checkbox:
+html
+<input type="checkbox" name="agree" id="agree">
+<label for="agree">I agree to the terms and conditions</label>
+
+Attributes:
+  type: Specifies the input field as a checkbox.
+  name: Provides a name for the input field.
+  id: Associates the label with the checkbox.
+
+6. Radio Buttons:
+html
+<input type="radio" name="gender" value="male" id="male">
+<label for="male">Male</label>
+
+<input type="radio" name="gender" value="female" id="female">
+<label for="female">Female</label>
+
+Attributes:
+  type: Specifies the input field as a radio button.
+  name: Provides a name for the input field.
+  value: Specifies the value of the radio button.
+  id: Associates the label with the radio button.
+
+7. File Upload:
+html
+<input type="file" name="avatar" accept=".jpg, .png" required>
+
+Attributes:
+  type: Specifies the input field as a file upload field.
+  name: Provides a name for the input field.
+  accept: Defines the file types that can be uploaded.
+  required: Makes the field mandatory for form submission.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  Sure! Here are comprehensive notes on HTML forms, including attributes and examples:
+
+HTML Forms:
+- HTML forms are used to collect user input, such as text, checkboxes, radio buttons, and more.
+- The <form> element is used to create a form and can contain various form elements.
+- The most common form elements are <input>, <textarea>, <select>, and <button>.
+- Forms are submitted to a server using the action attribute and the method attribute specifies how the data is sent.
+
+Form Structure:
+html
+<form action="/submit" method="post">
+  <!-- Form elements go here -->
+</form>
+
+
+Form Elements:
+
+1. <input> element:
+   - Used for various input types, such as text, password, checkbox, radio, etc.
+   - Common attributes: type, name, value, placeholder, required.
+
+   Example:
+  
+   <input type="text" name="username" placeholder="Enter your username" required>
+   
+
+2. <textarea> element:
+   - Used for multiline text input.
+   - Common attributes: name, rows, cols, placeholder, required.
+
+   Example:
+ 
+   <textarea name="message" rows="4" cols="50" placeholder="Enter your message" required></textarea>
+   
+
+3. <select> element:
+   - Used for dropdown menus.
+   - Common attributes: name, required.
+
+   Example:
+
+   <select name="gender" required>
+     <option value="">Select your gender</option>
+     <option value="male">Male</option>
+     <option value="female">Female</option>
+   </select>
+   
+
+4. <button> element:
+   - Used to create buttons within a form.
+   - Common attributes: type (submit, reset, button).
+
+   Example:
+   <button type="submit">Submit</button>
+   
+   
+
+Form Attributes:
+
+1. action attribute:
+   - Specifies the URL or server-side script to handle the form data when submitted.
+   - Example:
+    
+    <form action="/submit" method="post">
+
+2. method attribute:
+   - Specifies the HTTP method used to send the form data.
+   - Common methods: GET (default), POST.
+   - Example:
+    
+    <form action="/submit" method="post">
+
+3. name attribute:
+   - Assigns a name to the form element, used for server-side processing.
+   - Example: 
+    
+    <input type="text" name="username">
+
+4. value attribute:
+   - Sets the initial value of an input element.
+   - Example: 
+    
+    <input type="text" name="username" value="John Doe">
+
+5. placeholder attribute:
+   - Provides a hint or example text within an input element.
+   - Example: 
+      
+      <input type="text" placeholder="Enter your name">
+
+6. required attribute:
+   - Specifies that a form field must be filled out before submitting.
+   - Example: 
+      
+    <input type="text" name="username" required>
+
+These are some of the common attributes and examples for HTML forms. Remember that there are many more attributes and options available for form elements depending on your specific needs.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Certainly! Here are some additional input types for HTML forms:
+
+Input Types:
+
+1. Text Input:
+   - <input type="text">: Creates a single-line text input field.
+   - Example:
+    <input type="text" name="username">
+
+2. Password Input:
+   - <input type="password">: Creates a password input field where the characters are masked.
+   - Example:
+    <input type="password" name="password">
+
+3. Email Input:
+   - <input type="email">: Validates the input as an email address.
+   - Example:
+    <input type="email" name="email">
+
+4. Number Input:
+   - <input type="number">: Allows input of numeric values.
+   - Example:
+    <input type="number" name="age">
+
+5. Date Input:
+   - <input type="date">: Enables selection of a date from a date picker.
+   - Example:
+    <input type="date" name="birthdate">
+
+6. Checkbox:
+   - <input type="checkbox">: Allows the selection of one or more options.
+   - Example:
+     html
+     <input type="checkbox" name="interests" value="music">
+     <label for="interests">Music</label>
+     
+
+7. Radio Buttons:
+   - <input type="radio">: Allows the selection of a single option from multiple choices.
+   - Example:
+     html
+     <input type="radio" name="gender" value="male">
+     <label for="gender">Male</label>
+     <input type="radio" name="gender" value="female">
+     <label for="gender">Female</label>
+     
+
+8. File Input:
+   - <input type="file">: Allows the user to select a file to upload.
+   - Example:
+    <input type="file" name="avatar">
+
+9. Hidden Input:
+   - <input type="hidden">: Creates an invisible input field that can store data.
+   - Example:
+    <input type="hidden" name="secret" value="123">
+
+10. Submit Button:
+    - <input type="submit">: Submits the form data to the server.
+    - Example:
+     <input type="submit" value="Submit">
+
+11. Reset Button:
+    - <input type="reset">: Resets the form fields to their initial values.
+    - Example:
+     <input type="reset" value="Reset">
+
+12. Button:
+    - <input type="button">: Creates a clickable button with custom JavaScript functionality.
+    - Example:
+     <input type="button" value="Click Me" onclick="myFunction()">
+
+These are some additional input types that can be used within HTML forms. Each input type has specific attributes and behaviors associated with it, which you can further explore for customization.

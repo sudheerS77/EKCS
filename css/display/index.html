@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+       
+      .container {
+        width: auto;
+        height: 50vh;
+        display: flex;
+        /* flex-direction: row; */
+        /* 
+            row (default)
+            row-reverse
+            column
+            column-reverse */
+
+        /* flex-wrap: wrap; */
+
+        /* justify-content: space-evenly; */
+
+        /* 
+        flex-start
+        center
+        flex-end
+        space-around
+        space-between
+        space-around
+        space-evenly
+        */
+
+        align-items: center;
+        justify-content: center;
+
+        gap: 10px;
+
+        border: 2px solid gray;
+      }
+      .box_1 {
+        width: 100px;
+        height: 100px;
+      }
+      .box_2 {
+        width: 80px;
+        height: 50px;
+      }
+      .box_1 {
+        border: 2px solid gray;
+        background-color: red;
+      }
+      .box_2 {
+        border: 2px solid gray;
+        background-color: blue;
+      }
+      span {
+        border: 1px solid red;
+      }
+      div {
+        /* display: block; */
+      }
+      div{        
+        /* height: 40vh; */
+        /* width: 50vw; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* border: 2px solid red; */
+      }
+      button{     
+        width: 100px;   
+        padding: 5px 10px;
+        border: 2px solid blue;
+        background-color: rgba(10, 54, 227, 0.889);
+        color: #fff;
+        border-radius: 5px;
+        font-size: 1rem;
+        font-family: 'Times New Roman', Times, serif;
+      }
+      button:hover{
+        border: 2px solid rgb(4, 255, 71);
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- flex Box -->
+    <!-- <div class="container">
+      <div class="box_1"></div>
+      <div class="box_2"></div>
+      <div class="box_1"></div>
+    </div>
+    <span>span tag</span>
+    <span>span tag</span>
+    <span>span tag</span> -->
+    
+    <div>
+        <button>Signin</button>
+    </div>
+    <div>
+        <button>Signin</button>
+    </div>
+    <div>
+        <button>Signin</button>
+    </div>
+    <div>
+        <button>Signin</button>
+    </div>
+  </body>
+</html>
