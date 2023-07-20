@@ -82,6 +82,31 @@
         background-color: gray;
 
       }
+      .ham{
+        display: none;
+      }
+      @media screen and (max-width: 499px) {
+    .nav{
+      position: relative;
+    }
+    .menu{
+      display: block;
+      position: absolute;
+      top: 20px;
+      left: 0;
+      background-color: red;
+      width: 100%;
+      
+    }
+    .menu ul{
+      display: flex;
+      flex-direction: column;
+    }
+    .ham{
+        display: block;
+      }
+}
+
 
     </style>
   </head>
@@ -118,6 +143,9 @@
           <li>Contact</li>
           <li>Signin</li>
         </ul>
+      </div>
+      <div class="ham">
+        M
       </div>
     </div>
   </body>
